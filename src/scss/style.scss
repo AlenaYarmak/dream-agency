@@ -1,4 +1,73 @@
+/* reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+input:focus{
+    outline: none;
+}
+li {
+    list-style-type: none;
+}
+input[type=number] {
+    appearance: textfield;
+}
+button {
+    outline: 0;
+}
+button:focus {
+    outline: none;
+}
+/* Fonts */
+/* font-family: 'Hind Vadodara', sans-serif;
+font-family: 'Playfair Display', serif; */
 .container {
-    color: rgb(173, 173, 91);
-    font-size: 50px;
+    padding: 0 50px;
+}
+
+/* header */
+.header {
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 43px;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        color: #331B3B;
+        font-family: Hind Vadodara;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.16px;
+        max-width: 352px;
+        width: 100%;
+    }
+    &__logo {
+        color: #331B3B;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        font-family: Playfair Display;
+    }
+    &__social {
+        display: flex;
+        max-width: 352px;
+        width: 100%;
+        justify-content: end;
+        &-item {
+            padding-left: 16px;
+        }
+    }
 }
